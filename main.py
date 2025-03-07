@@ -111,9 +111,13 @@ def random(min_val, max_val):
 
 # Helper function to simulate sleep (delay)
 def time_sleep(seconds):
-    # This is a placeholder to simulate a delay
-    time_start = 0  # No actual sleep implementation, just placeholder for simplicity
-    pass
+    start_time = 0  # Simulate the current time by a variable
+    end_time = seconds  # Set end time as the specified sleep duration
+    
+    while start_time < end_time:
+        start_time += 0.001  # Simulate passage of time by incrementing small steps
+        # In a real environment, this would be tied to a system clock or timer
+        pass  # Busy-wait loop
 
 if __name__ == "__main__":
     main()
